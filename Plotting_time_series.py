@@ -53,11 +53,11 @@ for i in range(len(date_lst)):
 fig, ax = plt.subplots(figsize=(10,7))
 
 RP, = ax.plot(date_lst, RP_lst, label = 'RP')
-RP_3_month_high, = ax.plot(date_lst, rolling_3_month_high_RP_lst, label = 'RP 3 month high')
+RP_3_month_high, = ax.plot(date_lst, rolling_3_month_high_RP_lst, label = 'RP 3-month High')
 
-RP_1_month_after_3_month_high, = ax.plot(date_one_month_forward_lst, RP_after_high_dict['one_month'], label = '1 Month RP')
-RP_3_month_after_3_month_high, = ax.plot(date_three_months_forward_lst, RP_after_high_dict['three_months'], label = '3 Month RP')
-RP_6_month_after_3_month_high, = ax.plot(date_six_months_forward_lst, RP_after_high_dict['six_months'], label = '6 Month RP')
+RP_1_month_after_3_month_high, = ax.plot(date_one_month_forward_lst, RP_after_high_dict['one_month'], label = 'RP 1 Month After 3-month High')
+RP_3_month_after_3_month_high, = ax.plot(date_three_months_forward_lst, RP_after_high_dict['three_months'], label = 'RP 3 Months After 3-month High')
+RP_6_month_after_3_month_high, = ax.plot(date_six_months_forward_lst, RP_after_high_dict['six_months'], label = 'RP 6 Months After 3-month High')
 
 # RP_1_month_after_3_month_high, = ax.plot(rolling_3_month_high_RP_date_no_dupli_lst[1:], RP_after_high_dict['one_month'], label = '1 Month RP')
 # RP_3_month_after_3_month_high, = ax.plot(rolling_3_month_high_RP_date_no_dupli_lst[2:], RP_after_high_dict['three_months'], label = '3 Month RP')
