@@ -27,7 +27,6 @@ high RP.
 Instructions:
 
 1. Run Calculating_stats.py. This script will call the earlier scripts it needs. The output spreadsheets this script produce are:
-(NB: A fourth spreadsheet is produced, it is not formatted and is used to make another spreadsheet)
 
 - NESTE_SXXP_3_month_highs.xlsx
 - Three_month_high_data_formatted.xlsx
