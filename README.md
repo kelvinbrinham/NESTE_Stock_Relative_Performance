@@ -11,6 +11,8 @@ NB: I define outperformance (underperformance) as performance >= 0 (< 0)
 NB: Average performance is the mean of all of the 1, 3 and 6 month 1_month_(out)performance respectively
 NB: I have defined Hit Ratio as, Hit_Ratio = Number_Outperformances / (Number_Outperformances + Number_Underperformances)
 
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
 This repository contains 6 scripts, 1 input spreadsheet 'Neste_and_SXXP price.xlsx' and an OUTPUT folder (to hold output spreadsheets).
 
 The scripts (in the order they run) are:
@@ -25,6 +27,7 @@ The scripts (in the order they run) are:
 - Plotting_summary_bar_chart.py: Produces a bar chart containing the averages of various performance statistics at 1, 3 and 6 months after a 3 month 
 high RP.
 
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 
 Instructions:
 
@@ -35,7 +38,9 @@ Instructions:
 - Summary_data.xlsx
 
 2. Run Plotting_time_series.py or/and Plotting_summary_bar_chart.py. Clicking on the line segments in the legend on the time series plot will hide
-or reveal lines to make the plot clearer as desired. 
+or reveal lines to make the plot clearer as desired (If this doesn't work, see the troubleshoot suggestion below). 
+
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 
 IMPORTANT: If the hiding line feature on the time series plot is not working try updating matplotlib on your machine. On mac, this is achieved by running
 the following command within the terminal:
