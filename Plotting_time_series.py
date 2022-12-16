@@ -99,6 +99,9 @@ def on_pick(event):
 
     fig.canvas.draw()
 
+
 plt.connect('pick_event', on_pick)
+
+ax.set_title('Time Series Data')
 
 plt.show()
