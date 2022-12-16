@@ -17,8 +17,7 @@ The scripts (in the order they run) are:
 
 - Rolling_3_month_high_RP.py: Calculates the rolling 3-month RP high and the dates they occur. 
 - Calculating_outperformance.py: Calculates the performance and RP 1, 3 and 6 months after each 3-month high.
-- Calculating_stats.py: Calculates various statistics relating to performance (max, hit ratio etc.) and produces 3 output spreadsheets at various
-stages of the calculation process.
+- Calculating_stats.py: Calculates various statistics relating to performance (max, hit ratio etc.) and produces 3 output spreadsheets (found in OUTPUT folder) at various stages of the calculation process.
 
 - Plotting_time_series.py: Plots an interactive time series of RP, rolling 3-month high RP, 1, 3 and 6 month performance after a 3 month high.
 - Plotting_summary_bar_chart.py: Produces a bar chart containing the averages of various performance statistics at 1, 3 and 6 months after a 3 month 
@@ -27,10 +26,13 @@ high RP.
 
 Instructions:
 
-1. Run Calculating_stats.py. This script will call the earlier scripts it needs. The spreadsheets this script produces are:
-Bla
-Bla
-Bla
+1. Run Calculating_stats.py. This script will call the earlier scripts it needs. The output spreadsheets this script produce are:
+(NB: A fourth spreadsheet is produced, it is not formatted and is used to make another spreadsheet)
+
+- NESTE_SXXP_3_month_highs.xlsx
+- Three_month_high_data_formatted.xlsx
+- Summary_data.xlsx
+
 2. Run Plotting_time_series.py or/and Plotting_summary_bar_chart.py. Clicking on the line segments in the legend on the time series plot will hide
 or reveal lines to make the plot clearer as desired. 
 
