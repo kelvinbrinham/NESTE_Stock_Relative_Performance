@@ -66,7 +66,7 @@ x = np.arange(len(labels))  # the label locations
 width = 0.3  # the width of the bars
 
 fig, ax = plt.subplots()
-fig.set_size_inches(7, 5)
+fig.set_size_inches(7, 6)
 rects1 = ax.bar(x - width, one_month_list_perc, width, label='1 Month')
 rects2 = ax.bar(x, three_month_list_perc, width, label='3 Months')
 rects3 = ax.bar(x + width, six_month_list_perc, width, label='6 Months', color = 'purple')
