@@ -25,7 +25,7 @@ The scripts (in the order they run) are:
 
 - Plotting_time_series.py: Plots an interactive time series of RP, rolling 3-month high RP, 1, 3 and 6 month performance after a 3 month high.
 - Plotting_summary_bar_chart.py: Produces a bar chart containing the averages of various performance statistics at 1, 3 and 6 months after a 3 month 
-high RP.
+high RP and the high RP.
 
 <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 
