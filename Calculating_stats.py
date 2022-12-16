@@ -22,8 +22,22 @@ from Calculating_outperformance import Neste_and_SXXP_price_df
 #<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 
 #MAKE YES COLUMNS YELLOW!
-Neste_and_SXXP_price_df.to_excel('OUTPUT/Complete_data_coloured.xlsx', sheet_name='Sheet1', startrow = 2, index=False)
-func.colour_yes_cells_yellow('OUTPUT/Complete_data_coloured.xlsx')
+Complete_data_coloured_file_name = 'OUTPUT/Complete_data_coloured.xlsx'
+Neste_and_SXXP_price_df.to_excel(Complete_data_coloured_file_name, sheet_name='Sheet1', startrow = 2, index=False)
+func.colour_yes_cells_yellow(Complete_data_coloured_file_name)
+
+#Formatting Column titles in Complete_data_coloured.xlsx
+Complete_data_coloured_wb = xl.load_workbook(Complete_data_coloured_file_name)
+Complete_data_coloured_ws = Complete_data_coloured_wb.active
+
+Complete_data_coloured_ws['E3'] = 'RP 3-month High'
+Complete_data_coloured_ws['F3'] = 'RP 3-month High Date'
+Complete_data_coloured_ws['G3'] = 'RP 3-month High (y/n)'
+Complete_data_coloured_ws['H3'] = '1-month Performance'
+Complete_data_coloured_ws['I3'] = '3-month Performance'
+Complete_data_coloured_ws['J3'] = '6-month Performance'
+
+Complete_data_coloured_wb.save(Complete_data_coloured_file_name)
 
 #<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 #Create new data frame only containing 3 month highs
