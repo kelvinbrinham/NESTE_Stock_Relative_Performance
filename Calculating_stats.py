@@ -10,6 +10,7 @@ import statistics as stats
 from openpyxl import Workbook
 from openpyxl.styles import PatternFill
 import functions as func
+import os
 
 #Set how much of a dataframe is displayed when running the scipt
 pd.set_option('display.max_rows', 10)
@@ -30,6 +31,8 @@ func.colour_yes_cells_yellow(Complete_data_coloured_file_name)
 Complete_data_coloured_wb = xl.load_workbook(Complete_data_coloured_file_name)
 Complete_data_coloured_ws = Complete_data_coloured_wb.active
 
+Complete_data_coloured_ws['B3'] = 'NESTE FH last PX'
+Complete_data_coloured_ws['C3'] = 'SXXP last PX'
 Complete_data_coloured_ws['E3'] = 'RP 3-month High'
 Complete_data_coloured_ws['F3'] = 'RP 3-month High Date'
 Complete_data_coloured_ws['G3'] = 'RP 3-month High (y/n)'
@@ -93,9 +96,17 @@ for letter in percentage_column_letters_lst:
 
         Three_month_high_data_ws[letter + str(i)].number_format = '0.00%'
 
-
+#Formatting sheet headers for readability
+Three_month_high_data_ws['B3'] = 'NESTE FH last PX'
+Three_month_high_data_ws['C3'] = 'SXXP last PX'
+Three_month_high_data_ws['D3'] = 'RP 3-month High'
+Three_month_high_data_ws['E3'] = '1-month Performance'
+Three_month_high_data_ws['F3'] = '3-month Performance'
+Three_month_high_data_ws['G3'] = '6-month Performance'
 
 Three_month_high_data_wb.save(Three_month_high_data_wb_file_name)
+
+os.remove('OUTPUT/Three_month_high_data.xlsx')
 
 #<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 one_month_observations = func.length_ignoring_strings_and_nan(one_month_outperformance_lst)
