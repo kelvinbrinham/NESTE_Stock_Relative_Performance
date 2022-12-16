@@ -8,6 +8,8 @@ the code produces two plots summarising the data produced.
 
 NB: 1_month_(out)performance = RP_1_month_after_3_month_high / RP_at_3_month_high (3 and 6 month equivilants defined similarly)
 NB: I define outperformance (underperformance) as performance >= 0 (< 0)
+NB: Average performance is the mean of all of the 1, 3 and 6 month 1_month_(out)performance respectively
+NB: I have defined Hit Ratio as, Hit_Ratio = Number_Outperformances / (Number_Outperformances + Number_Underperformances)
 
 This repository contains 6 scripts, 1 input spreadsheet 'Neste_and_SXXP price.xlsx' and an OUTPUT folder (to hold output spreadsheets).
 
