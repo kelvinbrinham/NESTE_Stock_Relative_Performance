@@ -88,6 +88,8 @@ ax.bar_label(rects3, padding=3)
 
 fig.tight_layout()
 
+plt.savefig('Plot_examples/Summary_Data_Bar_Chart.png', dpi = 800)
+
 plt.show()
 
 

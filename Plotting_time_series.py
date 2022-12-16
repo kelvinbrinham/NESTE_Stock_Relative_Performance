@@ -104,4 +104,8 @@ plt.connect('pick_event', on_pick)
 
 ax.set_title('Time Series Data')
 
+
+plt.savefig('Plot_examples/Time_Series_Data.png', dpi = 800)
+
+
 plt.show()
