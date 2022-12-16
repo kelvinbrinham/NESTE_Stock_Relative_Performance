@@ -64,6 +64,7 @@ RP_6_month_after_3_month_high, = ax.plot(date_six_months_forward_lst, RP_after_h
 # RP_6_month_after_3_month_high, = ax.plot(rolling_3_month_high_RP_date_no_dupli_lst[14:], RP_after_high_dict['six_months'], label = '6 Month RP')
 
 
+
 legend = plt.legend(loc='upper left')
 
 RP_leg, RP_3_month_high_leg, RP_1_month_after_3_month_high_leg, RP_3_month_after_3_month_high_leg, RP_6_month_after_3_month_high_leg = legend.get_lines()
@@ -104,8 +105,6 @@ plt.connect('pick_event', on_pick)
 
 ax.set_title('Time Series Data')
 
-
 # plt.savefig('Plot_examples/Time_Series_Data.png', dpi = 800)
 
-
-plt.show()
+# plt.show()
