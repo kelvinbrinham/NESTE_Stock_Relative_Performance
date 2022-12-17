@@ -47,26 +47,6 @@ start_date = date_lst[0]
 #Last date in the data
 end_date = date_lst[-1]
 
-#List of ALL dates within the data window (inc. non trading dates)
-full_date_lst = list(pd.date_range(start_date, end_date, freq='d'))
-
-#List of the RP data but with 0's for days it wasn't traded
-#(This is convenient for indexing)
-full_RP_lst = []
-
-j = 0
-for i in range(len(full_date_lst)):
-    if full_date_lst[i] in date_st:
-        full_RP_lst.append(RP_lst[j])
-        j += 1
-
-    else:
-        full_RP_lst.append(0)
-
-
-
-#List of ALL dates with the non trading days NTD masked with 'NTD'
-full_date_lst = [x if x in date_st else 'NTD' for x in full_date_lst]
 
 
 no_days_in_three_months = 3 * one_month_days
