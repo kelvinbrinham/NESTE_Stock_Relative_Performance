@@ -29,8 +29,7 @@ Neste_and_SXXP_price_df['RP'] = Neste_and_SXXP_price_df['NESTE_FH_last_PX'] / Ne
 '''
 Calculating rolling 3 month high RP and adding to the dataframe as a new column
 
-I.e. Calulate the highest RP for each 3 month rolling period, 01/01/22-01/04/22, 02/01/22-02/04/22 etc.
-DEFINE 1 MONTH AS 22 TRADING DAYS
+I.e. Calulate the highest RP for each 3 month rolling period with 1 month DEFINED 1 MONTH AS 22 TRADING DAYS
 '''
 one_month_days = 22
 

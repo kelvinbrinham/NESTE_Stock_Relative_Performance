@@ -21,11 +21,11 @@ The scripts (in the order they run) are:
 
 - Rolling_3_month_high_RP.py: Calculates the rolling 3-month RP high and the dates they occur. 
 - Calculating_outperformance.py: Calculates the performance and RP 1, 3 and 6 months after each 3-month high.
-- Calculating_stats.py: Calculates various statistics relating to performance (max, hit ratio etc.) and produces 3 output spreadsheets (found in OUTPUT folder) at various stages of the calculation process.
+- Calculating_stats.py: Calculates various statistics relating to performance (max, hit ratio etc.) and produces 3 output spreadsheets (found in the OUTPUT folder) at various stages of the calculation process.
 
 - Plotting_time_series.py: Plots an interactive time series of RP, rolling 3-month high RP, 1, 3 and 6 month performance after a 3 month high.
 - Plotting_summary_bar_chart.py: Produces a bar chart containing the averages of various performance statistics at 1, 3 and 6 months after a 3 month 
-high RP.
+high RP and the high RP.
 
 <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 
