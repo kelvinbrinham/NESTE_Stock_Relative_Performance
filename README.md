@@ -1,4 +1,4 @@
-# Aperture_NESTE_Relative_Performance_Task
+# NESTE_Stock_Relative_Performance
 
 Summary:
 Starting from a spreadsheet containing the NESTE FH and SXXP Index prices for the last ten years, I calculate the stock’s relative performance (RP) 
